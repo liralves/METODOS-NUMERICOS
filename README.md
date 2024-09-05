@@ -4,4 +4,4 @@
   </p>
 
 ## MÉTODOS NUMÉRICOS
-Repositório com fins educacionais para implementar o desenvolvimento do primeiro projeto da disciplina de Métodos Numéricos do Curso de Ciência da Computação. Este projeto conta 
+Projeto em desenvolvimento para a disciplina de Métodos Numéricos do curso de Ciência da Computação.
