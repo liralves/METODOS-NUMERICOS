@@ -4,4 +4,5 @@
   </p>
 
 ## MÉTODOS NUMÉRICOS
-Projeto em desenvolvimento para a disciplina de Métodos Numéricos do Curso de Ciência da Computação.
+Projeto em desenvolvimento para a disciplina de Métodos Numéricos do curso de Ciência da Computação.
+
