@@ -4,10 +4,12 @@
   </p>
 
 # MÉTODOS NUMÉRICOS
-### INTRODUÇÃO À PROBLEMÁTICA
+### PROBLEMÁTICA
 Distribuição Gaussiana & valor Crítico <br>
 <p align="justify">
 A distribuição Gaussiana decorre de eventos aleatórios. Eventos aleatórios, por sua vez, são fenômenos que, repetidos inúmeras vezes, geram resultados distintos - Por exemplo, o lançamento de um dado ou uma moeda. No entanto, à medida de vezes em que se repete o fenômeno, gera-se um padrão de comportamento. Esse padrão é conhecido como Distribuição Gaussiana ou distribuição normal.<br>
-<img src="">
+</p>
+<p align="justify">
+<img src="static/MÉTODOS NUMÉRICOS - PROJETO 01.png" width="700">
 </p>
 
