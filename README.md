@@ -13,3 +13,4 @@ A distribuição Gaussiana decorre de eventos aleatórios. Eventos aleatórios, 
 <img src="static/MÉTODOS NUMÉRICOS - PROJETO 01.png" width="700">
 </p>
 
+### APLICAÇÃO PRÁTICA
