@@ -14,3 +14,14 @@ A distribuição Gaussiana decorre de eventos aleatórios. Eventos aleatórios, 
 </p>
 
 ### APLICAÇÃO PRÁTICA
+#### Encontrar o valor crítico de uma distribuição normal
+Supondo que estamos trabalhando com uma distribuição normal padrão N(0,1) e desejamos calcular o valor crítico z para um intervalo de confiança. Quais os métodos numéricos poderíamos aplicar para chegar a uma solução suficientemente exata, sendo f(x) = 0? Existem alguns métodos numéricos, que serão utilizados para solucionar a equação que não possuí solução analítica. Estes métodos são:
+- Método da Bissecção
+- Método da Falsa-Posição
+- Método de Newton-Rapson
+  
+### Método da Bissecção
+O método da bissecção pode ser definido como uma técnica numérica para encontrar raízes de uma função contínua. Baseia-se no Teorema do Valor Intermediário, que garante que, se uma função muda de sinal em um intervalo [a, b], ela tem pelo menos uma raiz nesse intervalo. Básicamente, podemos analisar o processo que faremos através do fluxorama disponível abaixo.
+<p align="justify">
+<img src="static/MÉTODOS NUMÉRICOS - PROJETO 01.png" width="700">
+</p>
