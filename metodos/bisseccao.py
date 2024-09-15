@@ -1,49 +1,24 @@
-import math
+from scipy.stats import norm
 
-def funcao(xo):
-    return pow(xo, 3) - (9 * xo) + 3
-
-# Solicitação de intervalos e precisão
-a = float(input("Intervalo a: "))
-b = float(input("Intervalo b: "))
-precisao = float(input("Precisao: "))
-print('\n')
-
-# Verificação inicial: f(a) e f(b) devem ter sinais opostos
-while funcao(a) * funcao(b) >= 0:
-    print("Erro: f(a) e f(b) devem ter sinais opostos.")
-    a = float(input("Intervalo a: "))
-    b = float(input("Intervalo b: "))
-    precisao = float(input("Precisao: "))
-    print('\n')
+def bisseccao(target_cdf, tolerance=1e-6, a=-10, b=10):
+    fa = norm.cdf(a) - target_cdf
+    fb = norm.cdf(b) - target_cdf
     
-
-# Início do método da bisseção
-if (b - a) < precisao:
-    x1 = a
-else:
-    k = 1
-    M = funcao(a)
-    while True:
-        x = (a + b) / 2
-        print("Iteracao: %d" % k)
-        print("Valor de X: %f" % x)
-        print("f(x): %f" % funcao(x))
-        print("b - a: %f" % ((b - a) / 2))
-        print('\n')
+    if fa * fb > 0:
+        raise ValueError("Os valores de f(a) e f(b) devem ter sinais opostos.")
+    
+    while (b - a) / 2 > tolerance:
+        c = (a + b) / 2
+        fc = norm.cdf(c) - target_cdf
         
-        # Atualização do intervalo
-        if M * funcao(x) > 0:
-            a = x
+        if abs(fc) < tolerance:
+            return c
+        elif fa * fc < 0:
+            b, fb = c, fc
         else:
-            b = x
-        
-        # Critério de parada: intervalo pequeno ou f(x) próximo de zero
-        if abs(funcao(x)) <= precisao or (b - a) <= precisao:
-            x1 = x
-            break
-        
-        k = k + 1
+            a, fa = c, fc
+            
+    return (a + b) / 2
 
-# Resultado final
-print('Valor de xBarra: %f' % x1)
+z_value = bisseccao(0.05)
+print(f"Valor crítico para CDF = 0,05 é aproximadamente: {z_value}")
