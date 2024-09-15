@@ -23,5 +23,6 @@ Supondo que estamos trabalhando com uma distribuição normal padrão N(0,1) e d
 ### Método da Bissecção
 O método da bissecção pode ser definido como uma técnica numérica para encontrar raízes de uma função contínua. Baseia-se no Teorema do Valor Intermediário, que garante que, se uma função muda de sinal em um intervalo [a, b], ela tem pelo menos uma raiz nesse intervalo. Básicamente, podemos analisar o processo que faremos através do fluxorama disponível abaixo.
 <p align="justify">
-<img src="static/MÉTODOS NUMÉRICOS - PROJETO 01.png" width="700">
+<img src="static/ITERAÇÕES DA BISSECÇÃO.png" width="700">
 </p>
+Ou seja, através de dados iniciais, como a função requerida, o intervalo e a precisão, iniciaremos o processo de iterações para chegar a uma solução aproximada. Caso se chegue a uma quantidade x de iterações e uma aproximação suficientemente exata de acordo com os dados iniciais, faremos os cálculos finais que o método requer e chegaremos nas raízes que queremos encontrar. Caso não se encontre uma aproximação exata, faremos novas aproximações através de dados que obtivemos das iterações anteriores, até chegarmos a um resultado aproximadamente exato.
