@@ -19,4 +19,3 @@ def regula_falsi(target_cdf, tolerance=1e-6, a=-10, b=10):
 
 z_value = regula_falsi(0.05)
 print(f"Valor crítico para CDF = 0,05 é aproximadamente: {z_value}")
-explique o código
